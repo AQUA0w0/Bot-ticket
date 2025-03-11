@@ -19,7 +19,7 @@ Um bot de tickets completo para Discord, permitindo que usuários **abram ticket
 ## 🛠️ **Instalação**
 1️⃣ **Clone o repositório**:  
    ```bash
-   git clone https://github.com/aqua0w0/bot-de-tickets.git
+   git clone https://github.com/aqua0w0/bot-ticket.git
    cd bot-de-tickets
 
 2️⃣ Instale as dependências:
