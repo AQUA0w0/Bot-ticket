@@ -1,66 +1,76 @@
-Como Funciona o Bot de Ticket – Explicação Detalhada
+📜 Como Usar o Bot de Tickets
 
-O Bot de Ticket é uma ferramenta prática para gerenciamento de suporte dentro do servidor Discord. Ele permite que usuários abram tickets de atendimento e sejam atendidos de maneira organizada. Aqui está um guia completo sobre o funcionamento do bot:
+📌 Bot desenvolvido por: aqua0w0
+📌 Versão: Atualizada e otimizada 🚀
 
-🚀 Funcionalidades do Bot
+📌 Introdução
 
-✅ Criação automática de tickets através do comando /ticket.
-✅ Os tickets são canais privados visíveis apenas para o usuário que abriu e a equipe de suporte.
-✅ Criação automática da categoria "Tickets", se não existir.
-✅ Fechamento e exclusão de tickets usando /fechar.
-✅ Registro de tickets no banco de dados SQLite para melhor gerenciamento.
+Este bot foi criado para facilitar a gestão de tickets dentro do Discord. Ele permite que usuários abram, interajam e avaliem tickets de suporte de forma rápida, segura e eficiente.
+
+✅ Tickets criados com um clique
+✅ Avaliação de suporte antes do fechamento
+✅ Correção automática de tickets bugados
+✅ Sistema de feedbacks para melhorar o atendimento
+
+Desenvolvido por aqua0w0 com foco em segurança, confiabilidade e praticidade.
+
+🛠️ Como Instalar e Configurar
+
+1️⃣ Baixe os arquivos do bot (código-fonte e .env).
+2️⃣ Instale as dependências:
+
+pip install -r requirements.txt
+
+3️⃣ Configure o arquivo .env com as informações do seu servidor.
+4️⃣ Inicie o bot executando:
+
+python bot.py
+
+🎟️ Como Abrir um Ticket
+
+1️⃣ Use o comando /ticket.
+2️⃣ Escolha a categoria desejada (Suporte, Dúvida, Outro).
+3️⃣ Um canal privado será criado para você conversar com o suporte.
+
+📌 O ticket pode ser fechado pelo próprio usuário a qualquer momento.
+
+❌ Como Fechar um Ticket
+
+1️⃣ No canal do ticket, clique no botão "Fechar Ticket".
+2️⃣ Antes de fechar, o bot solicitará uma avaliação do atendimento.
+3️⃣ Escolha uma nota de 1 a 5 estrelas.
+4️⃣ O feedback será enviado ao canal de feedbacks e o ticket será fechado.
+
+📌 A equipe de suporte não pode fechar tickets, garantindo que o usuário avalie antes do encerramento.
+
+🔄 Como Resolver Tickets Bugados
+
+Se um ticket não for fechado corretamente, o bot detectará o problema e oferecerá opções para corrigir automaticamente.
+
+✅ Se um usuário tentar abrir um novo ticket e já tiver um bugado, um botão aparecerá para ele excluir o antigo.
+✅ Administradores podem usar o comando /resetartickets para remover tickets travados.
+
+📊 Como Funciona a Avaliação
+
+Após o atendimento, o usuário recebe um botão para avaliar o suporte antes do ticket ser fechado.
+
+📌 A avaliação inclui:
+
+🌟 Nota de 1 a 5 estrelas
+
+👤 Quem abriu o ticket
+
+👨‍💼 Quem prestou suporte (com base no histórico do canal)
+
+📢 O feedback é enviado para um canal específico
+
+📌 Caso o suporte não tenha interagido, o bot avisará que nenhum suporte foi registrado.
+
+🛠️ Comandos Disponíveis
+
+/ticket
+
+/resetartickets
 
 
-📌 Como Usar o Bot
-
-O bot utiliza comandos slash (/), então os usuários precisam digitar /ticket para abrir um atendimento.
-
-1️⃣ Como Abrir um Ticket
-
-1. Acesse o canal de suporte no servidor.
-
-
-2. Digite /ticket e envie o comando.
-
-
-3. O bot criará um canal privado na categoria "Tickets" com o nome ticket-seu-nome.
-
-
-4. Somente você e a equipe de suporte poderão acessar esse canal.
-
-
-5. Aguarde um membro da equipe de suporte responder no canal.
-
-
-2️⃣ Como Fechar um Ticket
-
-1. Dentro do canal do ticket, digite /fechar.
-
-
-2. O bot avisará que o ticket será fechado em 5 segundos.
-
-
-3. Após esse tempo, o canal será automaticamente deletado.
-
-📢 Aviso Importante para o Servidor
-
-⚠ Para que os usuários saibam como pedir suporte, é essencial deixar essas instruções no canal de suporte do Discord!
-
-✍ Mensagem recomendada para o canal de suporte:
-
-📩 Precisa de ajuda? Abra um ticket!
-✦ Digite /ticket para abrir um atendimento.
-✦ Um canal privado será criado automaticamente.
-✦ Quando terminar, use /fechar para encerrar o ticket.
-✦ Nossa equipe responderá assim que possível! 🚀
-
-🎯 Benefícios do Bot
-
-🔹 Evita mensagens privadas desorganizadas.
-🔹 Mantém um histórico de suporte eficiente.
-🔹 Garante privacidade no atendimento.
-🔹 Fácil de usar, sem necessidade de papéis ou mensagens manuais.
-
-💡 Agora é só configurar o bot e instruir os usuários no canal de suporte! 🚀
-
-créditos aqua0w0
+Este bot foi projetado para ser robusto, seguro e funcional, garantindo que nenhum ticket bugado fique preso, que o suporte seja avaliado corretamente e que o usuário sempre tenha controle sobre seus tickets.
